@@ -141,7 +141,13 @@ const HomePage = () => {
             starting ? "hidden" : "mediaBox flex justify-center items-center"
           }
         >
-          <AboutComp />
+          <div
+            className={
+              selectedTab.about ? "Tab-content" : "Tab-content hidden "
+            }
+          >
+            <AboutComp />
+          </div>
         </div>
       </div>
     </div>

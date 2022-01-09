@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import "./TabDesign.css"
+import profile from "../images/profile.png"
 
 const AboutComp = () => {
   return (
@@ -15,6 +16,7 @@ const AboutComp = () => {
           programs and websites possible.
         </p>
       </div>
+      <img src={profile} alt="Profile" />
     </div>
   )
 }
