@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@100;200;300;500&display=swap");
+
+.Tab-header {
+  font-family: Raleway;
+  font-weight: 200;
+  font-size: 7vh;
+}
+
+@media screen and (max-width: 661px) {
+  .Tab-header {
+    font-size: 4.5vh;
+  }
+}
+
+.Tab-para {
+  font-family: Raleway;
+  font-weight: 400;
+}

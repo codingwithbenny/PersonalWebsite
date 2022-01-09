@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@100;200;300;500&display=swap");
+
+/* Intro Page */
+
+.Background {
+  background-color: rgb(255, 223, 181);
+}
+
+.Benny-start {
+  font-family: Raleway;
+  font-weight: 200;
+  font-size: 6rem;
+  animation: fadein 2s;
+  transition: 0.3s ease-out;
+}
+
+.Benny-start:hover {
+  font-size: 6.25rem;
+}
+
+.Benny-div {
+  padding-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cursor {
+  animation: pulse 1.25s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Home Page/Tabs */
+
+.Benny-end {
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 3rem;
+  transition: 1s ease-out;
+  top: 25%;
+}
+
+.Benny-bio {
+  font-family: Raleway;
+  animation: fadeinbio 2.5s;
+}
+
+@keyframes fadeinbio {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Tabs {
+  font-family: Raleway;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.7rem;
+  animation: fadeinbio 2.5s;
+}
+
+.Tab-category {
+  color: #075985;
+  background: transparent;
+  box-shadow: inset 0 0 0 0;
+  transition: ease-out 0.5s;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.Tab-category:hover {
+  color: white;
+  background: #075985;
+  box-shadow: inset 100px 0 0 0 #075985;
+  border-radius: 5px;
+}
+
+.mediaBox {
+  padding-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
