@@ -77,7 +77,7 @@ const HomePage = () => {
           className={
             starting
               ? "hidden"
-              : "Tabs xl:flex justify-center items-center 2xl:space-x-38 xl:space-x-28 lg:space-x-10 md:space-x-4 pt-20 text-sky-800 "
+              : "Tabs xl:flex justify-center items-center 2xl:space-x-38 xl:space-x-28 lg:space-x-10 md:space-x-4 pt-10 text-sky-800 "
           }
         >
           <button

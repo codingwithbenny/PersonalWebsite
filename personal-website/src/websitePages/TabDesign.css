@@ -16,3 +16,23 @@
   font-family: Raleway;
   font-weight: 400;
 }
+
+.Resume {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 2.5vh;
+  color: #075985;
+  border: 2px solid #075985;
+  border-radius: 10px;
+  transition: ease-out 0.3s;
+}
+
+.Resume:hover {
+  font-size: 2.75vh;
+  color: rgb(255, 223, 181);
+  border: 2px solid rgb(255, 223, 181);
+}
+
+.Welcome:hover {
+  color: rgb(255, 223, 181);
+}
