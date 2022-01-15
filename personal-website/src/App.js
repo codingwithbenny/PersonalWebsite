@@ -1,12 +1,15 @@
 import logo from "./logo.svg"
 import "./App.css"
 import HomePage from "./websitePages/HomePage"
+import { Route, BrowserRouter as Router } from "react-router-dom"
 
 function App() {
   return (
-    <div>
-      <HomePage />
-    </div>
+    <Router>
+      <div>
+        <HomePage />
+      </div>
+    </Router>
   )
 }
 

@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@100;200;300;500&display=swap");
 
+:root {
+  --blue: #075985;
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
 .Tab-header {
   font-family: Raleway;
   font-weight: 200;
@@ -17,6 +27,7 @@
   font-weight: 400;
 }
 
+/* About Page */
 .Resume {
   font-family: Raleway;
   font-weight: 500;
@@ -35,4 +46,51 @@
 
 .Welcome:hover {
   color: rgb(255, 223, 181);
+}
+
+/* Skills Page */
+
+.Exp-titles {
+  font-family: Raleway;
+  font-weight: 500;
+}
+
+.Exp-icons {
+  font-size: 3.5rem;
+}
+
+.Exp-icons:hover {
+  animation: bounce 1s infinite;
+}
+
+.Exp-div {
+  animation: fadein 1s;
+  transition: 0.3s ease-out;
+}
+
+@media only screen and (max-width: 700px) {
+  .Exp-icons {
+    font-size: 2.5rem;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }

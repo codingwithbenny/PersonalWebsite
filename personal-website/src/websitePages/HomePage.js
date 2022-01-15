@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./HomePage.css"
 import AboutComp from "./AboutComp"
+import ExperienceComp from "./ExperienceComp"
 
 const initialSelectedTab = {
   experience: false,
@@ -52,13 +53,18 @@ const HomePage = () => {
         className={starting ? "text-center m-auto" : "Benny-div text-center"}
       >
         <h1
-          className={
-            starting ? "Benny-start text-white" : "Benny-end text-sky-800"
-          }
+          className={starting ? "Benny-start text-white " : "hidden"}
           onClick={exitStartingHandler}
         >
           {"`"}Benny{"`"}{" "}
           <span className={starting ? "cursor" : "hidden"}>|</span>
+        </h1>
+
+        <h1
+          className={starting ? "hidden" : "Benny-end text-sky-800 "}
+          onClick={exitStartingHandler}
+        >
+          {"`"}Benny{"`"}{" "}
         </h1>
 
         <h1 className={starting ? "Benny-bio text-white mt-5" : "hidden"}>
@@ -89,6 +95,9 @@ const HomePage = () => {
             onClick={(e) => selectTabHandler(0)}
           >
             `Experience`
+            <span className={selectedTab.experience ? "cursor" : "hidden"}>
+              |
+            </span>
           </button>
 
           <button
@@ -100,6 +109,7 @@ const HomePage = () => {
             onClick={(e) => selectTabHandler(1)}
           >
             `Skills`
+            <span className={selectedTab.skills ? "cursor" : "hidden"}>|</span>
           </button>
 
           <button
@@ -111,6 +121,7 @@ const HomePage = () => {
             onClick={(e) => selectTabHandler(2)}
           >
             `About`
+            <span className={selectedTab.about ? "cursor" : "hidden"}>|</span>
           </button>
 
           <button
@@ -122,6 +133,9 @@ const HomePage = () => {
             onClick={(e) => selectTabHandler(3)}
           >
             `Projects`
+            <span className={selectedTab.projects ? "cursor" : "hidden"}>
+              |
+            </span>
           </button>
 
           <button
@@ -133,6 +147,9 @@ const HomePage = () => {
             onClick={(e) => selectTabHandler(4)}
           >
             `Contacts`
+            <span className={selectedTab.contacts ? "cursor" : "hidden"}>
+              |
+            </span>
           </button>
         </div>
 
@@ -141,6 +158,13 @@ const HomePage = () => {
             starting ? "hidden" : "mediaBox flex justify-center items-center"
           }
         >
+          <div
+            className={
+              selectedTab.experience ? "Tab-content" : "Tab-content hidden "
+            }
+          >
+            <ExperienceComp />
+          </div>
           <div
             className={
               selectedTab.about ? "Tab-content" : "Tab-content hidden "
