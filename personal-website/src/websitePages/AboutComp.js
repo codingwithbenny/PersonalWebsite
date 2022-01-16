@@ -60,7 +60,7 @@ const AboutComp = () => {
       </div>
       <div className="pt-14">
         <a className="Resume px-5 py-2" href={resume} target="_blank">
-          My Résumé
+          Resume
         </a>
       </div>
       <div className="flex items-center justify-center grid grid-cols-8 gap-4">

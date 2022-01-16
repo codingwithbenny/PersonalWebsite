@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "./HomePage.css"
 import AboutComp from "./AboutComp"
 import ExperienceComp from "./ExperienceComp"
+import ProjectsComp from "./ProjectsComp"
 
 const initialSelectedTab = {
   experience: false,
@@ -171,6 +172,13 @@ const HomePage = () => {
             }
           >
             <AboutComp />
+          </div>
+          <div
+            className={
+              selectedTab.projects ? "Tab-content" : "Tab-content hidden "
+            }
+          >
+            <ProjectsComp />
           </div>
         </div>
       </div>

@@ -94,3 +94,57 @@
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+
+/* Projects Page */
+
+.Proj-text {
+  font-family: Raleway;
+}
+
+.Modal-text {
+  animation: fadein 1s;
+}
+
+.Proj-fade-right {
+  transform: translateX(80%);
+  transition: all 1s linear;
+  animation: fadeout 1s;
+  animation-fill-mode: forwards;
+}
+
+.Proj-fade-left {
+  transform: translateX(-80%);
+  transition: all 1s linear;
+  animation: fadeout 1s;
+  animation-fill-mode: forwards;
+}
+
+.Proj-fade-in {
+  transition: all 1s linear;
+  animation: fadein 1s;
+}
+
+@media only screen and (max-width: 700px) {
+  .Proj-fade-right {
+    transform: translateX(0);
+    transition: none;
+    animation: none;
+    animation-fill-mode: none;
+  }
+
+  .Proj-fade-left {
+    transform: translateX(0);
+    transition: none;
+    animation: none;
+    animation-fill-mode: none;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
