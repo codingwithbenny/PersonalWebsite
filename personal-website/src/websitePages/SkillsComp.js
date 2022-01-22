@@ -190,6 +190,20 @@ const SkillsComp = () => {
           <i className=" devicon-nodejs-plain colored " />
         </div>
         <div
+          className={
+            related.typescript ? "Skills-icon" : "Skills-icon opacity-30"
+          }
+          onClick={(e) => setSelectedSkill("typescript")}
+        >
+          <i className="devicon-typescript-plain colored " />
+        </div>
+        <div
+          className={related.react ? "Skills-icon" : "Skills-icon opacity-30"}
+          onClick={(e) => setSelectedSkill("react")}
+        >
+          <i className="  devicon-react-plain colored " />
+        </div>
+        <div
           className={related.python ? "Skills-icon" : "Skills-icon opacity-30"}
           onClick={(e) => setSelectedSkill("python")}
         >
@@ -200,12 +214,6 @@ const SkillsComp = () => {
           onClick={(e) => setSelectedSkill("rails")}
         >
           <i className="  devicon-rails-plain colored " />
-        </div>
-        <div
-          className={related.react ? "Skills-icon" : "Skills-icon opacity-30"}
-          onClick={(e) => setSelectedSkill("react")}
-        >
-          <i className="  devicon-react-plain colored " />
         </div>
         <div
           className={related.express ? "Skills-icon" : "Skills-icon opacity-30"}
@@ -219,14 +227,7 @@ const SkillsComp = () => {
         >
           <i className=" devicon-mongodb-plain colored " />
         </div>
-        <div
-          className={
-            related.typescript ? "Skills-icon" : "Skills-icon opacity-30"
-          }
-          onClick={(e) => setSelectedSkill("typescript")}
-        >
-          <i className="devicon-typescript-plain colored " />
-        </div>
+
         <div
           className={related.html ? "Skills-icon" : "Skills-icon opacity-30"}
           onClick={(e) => setSelectedSkill("html")}
@@ -241,20 +242,21 @@ const SkillsComp = () => {
         </div>
         <div
           className={
-            related.bootstrap ? "Skills-icon" : "Skills-icon opacity-30"
-          }
-          onClick={(e) => setSelectedSkill("bootstrap")}
-        >
-          <i className=" devicon-bootstrap-plain colored " />
-        </div>
-        <div
-          className={
             related.tailwind ? "Skills-icon" : "Skills-icon opacity-30"
           }
           onClick={(e) => setSelectedSkill("tailwind")}
         >
           <i className=" devicon-tailwindcss-original-wordmark colored " />
         </div>
+        <div
+          className={
+            related.bootstrap ? "Skills-icon" : "Skills-icon opacity-30"
+          }
+          onClick={(e) => setSelectedSkill("bootstrap")}
+        >
+          <i className=" devicon-bootstrap-plain colored " />
+        </div>
+
         <div
           className={related.docker ? "Skills-icon" : "Skills-icon opacity-30"}
           onClick={(e) => setSelectedSkill("docker")}
@@ -298,6 +300,83 @@ const SkillsComp = () => {
         >
           Please select a technology to see other technologies I tend to
           pair/use them with.
+        </h1>
+      </div>
+      <div className={selectedSkill === "javascript" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">It's a love-hate relationship</h1>
+      </div>
+      <div className={selectedSkill === "nodejs" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">
+          We brought our relationship to the backend{" "}
+        </h1>
+      </div>
+      <div className={selectedSkill === "typescript" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">
+          You made me love my relationship with those two
+        </h1>
+      </div>
+      <div className={selectedSkill === "react" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">You're my rock</h1>
+      </div>
+      <div className={selectedSkill === "python" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">
+          Error: "Unexpected Indent" <br />
+          We still love you{" "}
+        </h1>
+      </div>
+      <div className={selectedSkill === "rails" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">123-MVC</h1>
+      </div>
+      <div className={selectedSkill === "express" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">"The Gatekeeper"</h1>
+      </div>
+      <div className={selectedSkill === "mongodb" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">"Leaf" your storage to me</h1>
+      </div>
+      <div className={selectedSkill === "html" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">
+          I never meant to learn you, it just happened
+        </h1>
+      </div>
+      <div className={selectedSkill === "css" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">W</h1>
+        <h1 className="Skills-info">h</h1>
+        <h1 className="Skills-info">a</h1>
+        <h1 className="Skills-info">t</h1>
+        <br />
+        <h1 className="Skills-info">h</h1>
+        <h1 className="Skills-info">e</h1>
+        <br />
+        <h1 className="Skills-info">s</h1>
+        <h1 className="Skills-info">a</h1>
+        <h1 className="Skills-info">i</h1>
+        <h1 className="Skills-info">d</h1>
+      </div>
+      <div className={selectedSkill === "tailwind" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">Lego for Programmers</h1>
+      </div>
+      <div className={selectedSkill === "bootstrap" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">Lincoln Logs for Programmers</h1>
+      </div>
+      <div className={selectedSkill === "docker" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">
+          I've got the whole world in the palm of my hand
+        </h1>
+      </div>
+      <div className={selectedSkill === "wordpress" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">
+          I find your lack of creativity disturbing
+        </h1>
+      </div>
+      <div className={selectedSkill === "adobe" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">
+          I pay for all of your apps, but only use 5 of them
+        </h1>
+      </div>
+      <div className={selectedSkill === "office" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">
+          If you were to break
+          <br /> the entire world would be in shambles
         </h1>
       </div>
     </div>
