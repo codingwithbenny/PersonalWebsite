@@ -5,6 +5,7 @@ module.exports = {
     "./src/websitePages/AboutComp.js",
     "./src/websitePages/ExperienceComp.js",
     "./src/websitePages/ProjectsComp.js",
+    "./src/websitePages/SkillsComp.js",
   ],
   theme: {
     extend: {},

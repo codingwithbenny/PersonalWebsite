@@ -148,3 +148,22 @@
     opacity: 0;
   }
 }
+
+/* Skills page */
+
+.Skills-icon {
+  font-size: 3.4rem;
+  transition: 0.2s ease-in-out;
+}
+
+.Skills-icon:hover {
+  transform: scale(1.2);
+}
+
+.Skills-info {
+  font-family: Raleway;
+}
+
+.Skills-info-header {
+  font-family: Raleway;
+}

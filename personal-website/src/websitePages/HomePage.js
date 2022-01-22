@@ -3,6 +3,7 @@ import "./HomePage.css"
 import AboutComp from "./AboutComp"
 import ExperienceComp from "./ExperienceComp"
 import ProjectsComp from "./ProjectsComp"
+import SkillsComp from "./SkillsComp"
 
 const initialSelectedTab = {
   experience: false,
@@ -156,7 +157,7 @@ const HomePage = () => {
 
         <div
           className={
-            starting ? "hidden" : "mediaBox flex justify-center items-center"
+            starting ? "hidden" : "Media-box flex justify-center items-center"
           }
         >
           <div
@@ -179,6 +180,13 @@ const HomePage = () => {
             }
           >
             <ProjectsComp />
+          </div>
+          <div
+            className={
+              selectedTab.skills ? "Tab-content" : "Tab-content hidden "
+            }
+          >
+            <SkillsComp />
           </div>
         </div>
       </div>

@@ -19,14 +19,14 @@ const AboutComp = () => {
       <div className="flex items-center justify-center grid grid-cols-7 gap-4">
         <div className="col-start-3 col-span-3">
           <h1 className="Tab-header pb-10 items-center justify-center">
-            <span className="Welcome">W</span>
-            <span className="Welcome">e</span>
+            <span className="">W</span>
+            <span className="">e</span>
             <span className="Welcome">l</span>
-            <span className="Welcome">c</span>
+            <span className="">c</span>
             <span className="Welcome">o</span>
-            <span className="Welcome">m</span>
+            <span className="">m</span>
             <span className="Welcome">e</span>
-            <span className="Welcome">,</span>
+            <span className="">,</span>
           </h1>
           <p className="Tab-para ">
             In 2017, I went off to college to study computer science because the

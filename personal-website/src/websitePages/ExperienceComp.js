@@ -60,14 +60,14 @@ const ExperienceComp = () => {
             : "hidden duration-300"
         }
       >
-        <i className="Exp-icons devicon-javascript-plain colored "></i>
-        <i className="Exp-icons devicon-react-original colored"></i>
-        <i className="Exp-icons devicon-rails-plain colored"></i>
-        <i className="Exp-icons devicon-typescript-plain colored"></i>
-        <i className="Exp-icons devicon-docker-plain colored"></i>
-        <i className="Exp-icons devicon-html5-plain colored"></i>
-        <i className="Exp-icons devicon-css3-plain colored"></i>
-        <i className="Exp-icons devicon-bootstrap-plain colored"></i>
+        <i className="Exp-icons devicon-javascript-plain colored " />
+        <i className="Exp-icons devicon-react-original colored" />
+        <i className="Exp-icons devicon-rails-plain colored" />
+        <i className="Exp-icons devicon-typescript-plain colored" />
+        <i className="Exp-icons devicon-docker-plain colored" />
+        <i className="Exp-icons devicon-html5-plain colored" />
+        <i className="Exp-icons devicon-css3-plain colored" />
+        <i className="Exp-icons devicon-bootstrap-plain colored" />
       </div>
 
       <div className="md:flex items-center border-b-2 border-sky-800 pb-12 pt-20">
@@ -113,14 +113,14 @@ const ExperienceComp = () => {
             : "hidden duration-300"
         }
       >
-        <i className="Exp-icons devicon-javascript-plain colored"></i>
-        <i className="Exp-icons devicon-react-original colored"></i>
-        <i className="Exp-icons devicon-nodejs-plain colored"></i>
-        <i className="Exp-icons devicon-typescript-plain colored"></i>
-        <i className="Exp-icons devicon-docker-plain colored"></i>
-        <i className="Exp-icons devicon-html5-plain colored"></i>
-        <i className="Exp-icons devicon-css3-plain colored"></i>
-        <i className="Exp-icons devicon-bootstrap-plain colored"></i>
+        <i className="Exp-icons devicon-javascript-plain colored" />
+        <i className="Exp-icons devicon-react-original colored" />
+        <i className="Exp-icons devicon-nodejs-plain colored" />
+        <i className="Exp-icons devicon-typescript-plain colored" />
+        <i className="Exp-icons devicon-docker-plain colored" />
+        <i className="Exp-icons devicon-html5-plain colored" />
+        <i className="Exp-icons devicon-css3-plain colored" />
+        <i className="Exp-icons devicon-bootstrap-plain colored" />
       </div>
     </div>
   )
