@@ -1,5 +1,6 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import "./TabDesign.css"
+import emailjs from "emailjs-com"
 
 const ContactsComp = () => {
   const [inputFields, setInputFields] = useState({
@@ -15,6 +16,8 @@ const ContactsComp = () => {
   })
 
   const [hiddenCode, setHiddenCode] = useState("")
+
+  const form = useRef()
 
   const updateField = (event) => {
     event.preventDefault()
@@ -45,6 +48,21 @@ const ContactsComp = () => {
     const { nameVal, emailVal, reasonVal } = validation
 
     if (nameVal && emailVal && reasonVal) {
+      emailjs
+        .sendForm(
+          "service_2h699hs",
+          "template_r7s0frm",
+          form.current,
+          "user_FXKwDor3J7yHQgZTagx0V"
+        )
+        .then(
+          (result) => {
+            console.log(result.text)
+          },
+          (error) => {
+            console.log(error.text)
+          }
+        )
       console.log("itran")
       setInputFields({ name: "", email: "", reason: "" })
       setValidation({
@@ -93,7 +111,7 @@ const ContactsComp = () => {
 
   return (
     <div>
-      <form className="" onSubmit={(e) => submitHandler(e)}>
+      <form className="" ref={form} onSubmit={(e) => submitHandler(e)}>
         <div className="items-center py-2">
           <div
             className={
@@ -108,6 +126,7 @@ const ContactsComp = () => {
               placeholder="Who are you?"
               aria-label="name"
               value={inputFields.name}
+              name="name"
               onChange={(e) => updateField(e)}
             />
           </div>
@@ -124,6 +143,7 @@ const ContactsComp = () => {
               placeholder="Email"
               aria-label="email"
               value={inputFields.email}
+              name="email"
               onChange={(e) => updateField(e)}
             />
           </div>
@@ -140,6 +160,7 @@ const ContactsComp = () => {
               placeholder="Let's Talk"
               aria-label="reason"
               value={inputFields.reason}
+              name="reason"
               onChange={(e) => updateField(e)}
             />
           </div>
