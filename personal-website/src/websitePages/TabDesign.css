@@ -36,16 +36,27 @@
   border: 2px solid #075985;
   border-radius: 10px;
   transition: ease-out 0.3s;
+  display: inline-block;
 }
 
 .Resume:hover {
-  font-size: 2.75vh;
+  transform: scale(1.1);
   color: rgb(255, 223, 181);
   border: 2px solid rgb(255, 223, 181);
 }
 
 .Welcome:hover {
   color: rgb(255, 223, 181);
+}
+
+.About-icon {
+  font-size: 1.5rem;
+  display: inline-block;
+  transition: ease-out 0.3s;
+}
+
+.About-icon:hover {
+  transform: scale(1.3);
 }
 
 /* Skills Page */
@@ -166,4 +177,12 @@
 
 .Skills-info-header {
   font-family: Raleway;
+}
+
+/* Contacts Page */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

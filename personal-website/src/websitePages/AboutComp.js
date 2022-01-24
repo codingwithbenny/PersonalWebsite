@@ -59,9 +59,20 @@ const AboutComp = () => {
         />
       </div>
       <div className="pt-14">
-        <a className="Resume px-5 py-2" href={resume} target="_blank">
+        <a
+          className="About-icon devicon-github-original colored"
+          href="https://github.com/codingwithbenny"
+          target="_blank"
+        ></a>
+
+        <a className="Resume px-5 py-1 mx-8" href={resume} target="_blank">
           Resume
         </a>
+        <a
+          className="About-icon devicon-linkedin-plain colored"
+          href="https://www.linkedin.com/in/benny-tamburrino-b72a8a211/"
+          target="_blank"
+        ></a>
       </div>
       <div className="flex items-center justify-center grid grid-cols-8 gap-4">
         <img

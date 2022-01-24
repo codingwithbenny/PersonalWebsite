@@ -14,6 +14,8 @@ const ContactsComp = () => {
     newPage: true,
   })
 
+  const [hiddenCode, setHiddenCode] = useState("")
+
   const updateField = (event) => {
     event.preventDefault()
     const targetName = event.target.ariaLabel
@@ -23,6 +25,14 @@ const ContactsComp = () => {
     console.log(targetValue)
 
     setInputFields((input) => ({ ...inputFields, [targetName]: targetValue }))
+  }
+
+  const updateCode = (event) => {
+    event.preventDefault()
+    //const targetName = event.target.ariaLabel
+    const targetValue = event.target.value
+
+    setHiddenCode(targetValue)
   }
 
   const submitHandler = (event) => {
@@ -57,6 +67,7 @@ const ContactsComp = () => {
 
   React.useEffect(() => {
     if (
+      !inputFields.email.includes(" ") &&
       inputFields.email.includes("@") &&
       inputFields.email.includes(".") &&
       inputFields.email.length !== ""
@@ -146,6 +157,22 @@ const ContactsComp = () => {
           </button>
         </div>
       </form>
+
+      <div>
+        <div className="border-b border-sky-800 mb-10 pb-2 mt-10">
+          <input
+            className="Code-input appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none text-sm"
+            type="number"
+            placeholder="Did you find the hidden code?"
+            aria-label="code"
+            value={hiddenCode}
+            onChange={(e) => updateCode(e)}
+          />
+        </div>
+      </div>
+      <div className={hiddenCode === "42" ? "" : "hidden"}>
+        <h1 className="text-sm">Video in Works</h1>
+      </div>
     </div>
   )
 }
