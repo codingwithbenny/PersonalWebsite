@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "homepage": "http://bennytam.io/",
+  "homepage": "http://bennytam-io.preview-domain.com/build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
