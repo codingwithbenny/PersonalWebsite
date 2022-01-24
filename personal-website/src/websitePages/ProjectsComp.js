@@ -17,21 +17,21 @@ const ProjectsComp = () => {
   const modalFocus = (item) => {
     if (item === 0) {
       if (modal.website && !hide) {
-        return "container items-center pt-10 px-5 md:translate-x-20 duration-1000 md:border-r-2 border-sky-800"
+        return "container items-center pt-10 px-5 md:translate-x-20 duration-1000 md:border-r border-sky-800"
       } else if (modal.website && hide) {
-        return "container items-center border-r-2 border-b-2 p-12 border-sky-800 duration-1000"
+        return "container items-center border-r border-b p-12 border-sky-800 duration-1000"
       } else if (!modal.website && !hide) {
-        return "Proj-fade-left items-center border-r-2 border-b-2 p-12 border-sky-800 "
+        return "Proj-fade-left items-center border-r border-b p-12 border-sky-800 "
       }
     }
 
     if (item === 1) {
       if (modal.saveTime && !hide) {
-        return "container items-center pt-10 px-2 md:-translate-x-full duration-1000 md:border-r-2 border-orange-200"
+        return "container items-center pt-10 px-2 md:-translate-x-full duration-1000 md:border-r border-orange-200"
       } else if (modal.saveTime && hide) {
-        return "container items-center border-l-2 border-b-2 p-12 border-orange-200 duration-1000"
+        return "container items-center border-l border-b p-12 border-orange-200 duration-1000"
       } else if (!modal.saveTime && !hide) {
-        return "Proj-fade-right container items-center border-l-2 border-b-2 p-12 border-orange-200 "
+        return "Proj-fade-right container items-center border-l border-b p-12 border-orange-200 "
       }
     }
   }
@@ -112,12 +112,12 @@ const ProjectsComp = () => {
             ~ React ~ HTML5 ~ CSS3 ~ Tailwind ~
             <br />
             <br />
-            <h1
+            <p
               className=" text-3xl text-center text-sky-800 md:hover:scale-125 duration-300"
               onClick={() => exitHandler()}
             >
               X
-            </h1>
+            </p>
           </h1>
         </div>
       </div>
@@ -142,12 +142,12 @@ const ProjectsComp = () => {
             ~ Javascript ~ HTML5 ~ CSS3 ~ Google API ~
             <br />
             <br />
-            <h1
+            <p
               className=" text-3xl text-center text-orange-200 md:hover:scale-125 duration-300"
               onClick={() => exitHandler()}
             >
               X
-            </h1>
+            </p>
           </h1>
         </div>
         <img
@@ -169,8 +169,8 @@ const ProjectsComp = () => {
       <div
         className={
           modal.mobileApp
-            ? "Proj-fade-in container border-r-2 border-t-2 p-12 border-orange-200"
-            : "Proj-fade-left container border-r-2 border-t-2 p-12 border-orange-200 "
+            ? "Proj-fade-in container border-r border-t p-12 border-orange-200"
+            : "Proj-fade-left container border-r border-t p-12 border-orange-200 "
         }
       >
         <h1>Mobile App Coming Soon...</h1>
@@ -178,8 +178,8 @@ const ProjectsComp = () => {
       <div
         className={
           modal.redditBot
-            ? "Proj-fade-in container items-center border-l-2 border-t-2 p-12 border-sky-800"
-            : "Proj-fade-right container items-center border-l-2 border-t-2 p-12 border-sky-800 "
+            ? "Proj-fade-in container items-center border-l border-t p-12 border-sky-800"
+            : "Proj-fade-right container items-center border-l border-t p-12 border-sky-800 "
         }
       >
         <h1>Reddit Bot Coming Soon...</h1>

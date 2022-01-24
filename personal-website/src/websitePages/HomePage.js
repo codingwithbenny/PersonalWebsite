@@ -4,6 +4,7 @@ import AboutComp from "./AboutComp"
 import ExperienceComp from "./ExperienceComp"
 import ProjectsComp from "./ProjectsComp"
 import SkillsComp from "./SkillsComp"
+import ContactsComp from "./ContactsComp"
 
 const initialSelectedTab = {
   experience: false,
@@ -187,6 +188,13 @@ const HomePage = () => {
             }
           >
             <SkillsComp />
+          </div>
+          <div
+            className={
+              selectedTab.contacts ? "Tab-content" : "Tab-content hidden "
+            }
+          >
+            <ContactsComp />
           </div>
         </div>
       </div>

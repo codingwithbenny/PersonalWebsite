@@ -20,7 +20,7 @@ const ExperienceComp = () => {
 
   return (
     <div className="px-10">
-      <div className="md:flex items-center border-b-2 border-sky-800 pb-12 pt-10 ">
+      <div className="md:flex items-center border-b border-sky-800 pb-12 pt-10 ">
         <a className="w-full" href="https://directdental.com/ " target="_blank">
           <img
             src={DirectDentalLogo}
@@ -70,7 +70,7 @@ const ExperienceComp = () => {
         <i className="Exp-icons devicon-bootstrap-plain colored" />
       </div>
 
-      <div className="md:flex items-center border-b-2 border-sky-800 pb-12 pt-20">
+      <div className="md:flex items-center border-b border-sky-800 pb-12 pt-20">
         <a
           className="w-full"
           href="https://arrowpointtaxes.com/ "
