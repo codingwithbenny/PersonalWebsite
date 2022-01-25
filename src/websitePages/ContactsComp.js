@@ -24,9 +24,6 @@ const ContactsComp = () => {
     const targetName = event.target.ariaLabel
     const targetValue = event.target.value
 
-    console.log(event)
-    console.log(targetValue)
-
     setInputFields((input) => ({ ...inputFields, [targetName]: targetValue }))
   }
 
@@ -40,8 +37,6 @@ const ContactsComp = () => {
 
   const submitHandler = (event) => {
     event.preventDefault()
-
-    console.log(validation)
 
     setValidation({ ...validation, newPage: false })
 
@@ -63,7 +58,7 @@ const ContactsComp = () => {
             console.log(error.text)
           }
         )
-      console.log("itran")
+
       setInputFields({ name: "", email: "", reason: "" })
       setValidation({
         ...validation,
@@ -104,10 +99,10 @@ const ContactsComp = () => {
     }
   }, [inputFields.reason])
 
-  React.useEffect(() => {
-    console.log(inputFields)
-    console.log(validation)
-  }, [inputFields, validation])
+  // React.useEffect(() => {
+  //   console.log(inputFields)
+  //   console.log(validation)
+  // }, [inputFields, validation])
 
   return (
     <div>

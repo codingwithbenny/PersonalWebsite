@@ -23,7 +23,7 @@ const HomePage = () => {
 
   const selectTabHandler = (e) => {
     Object.keys(selectedTab).forEach((v) => (selectedTab[v] = false))
-    console.log(e)
+    //console.log(e)
     if (e === 0) {
       setSelectedTab({ ...selectedTab, experience: true })
     } else if (e === 1) {
@@ -37,12 +37,12 @@ const HomePage = () => {
     }
   }
 
-  React.useEffect(() => {
-    console.log(starting)
-  }, [starting])
-  React.useEffect(() => {
-    console.log(selectedTab)
-  }, [selectedTab])
+  // React.useEffect(() => {
+  //   console.log(starting)
+  // }, [starting])
+  // React.useEffect(() => {
+  //   console.log(selectedTab)
+  // }, [selectedTab])
 
   return (
     <div

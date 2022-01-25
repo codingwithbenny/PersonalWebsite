@@ -71,7 +71,7 @@ const ProjectsComp = () => {
         counter++
       }
     })
-    console.log(counter)
+    // console.log(counter)
 
     if (counter === 0) {
       setHide(true)
@@ -80,9 +80,9 @@ const ProjectsComp = () => {
     }
   }, [modal])
 
-  React.useEffect(() => {
-    console.log(hide)
-  }, [hide])
+  // React.useEffect(() => {
+  //   console.log(hide)
+  // }, [hide])
 
   return (
     <div className="md:flex Proj-text md:grid grid-cols-2 pt-5 gap-10 px-5">
