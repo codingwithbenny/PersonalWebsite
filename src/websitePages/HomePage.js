@@ -55,23 +55,23 @@ const HomePage = () => {
       <div
         className={starting ? "text-center m-auto" : "Benny-div text-center"}
       >
-        <h1
+        <button
           className={starting ? "Benny-start text-white " : "hidden"}
           onClick={exitStartingHandler}
         >
           {"`"}Benny{"`"}{" "}
           <span className={starting ? "cursor" : "hidden"}>|</span>
-        </h1>
+        </button>
 
-        <h1
+        <button
           className={starting ? "hidden" : "Benny-end text-sky-800 "}
           onClick={exitStartingHandler}
         >
           {"`"}Benny{"`"}{" "}
-        </h1>
+        </button>
 
         <h1 className={starting ? "Benny-bio text-white mt-5" : "hidden"}>
-          [ Always Under Continuous Renovation ]
+          ~ Always Under Continuous Renovation ~
         </h1>
 
         <h2 className={starting ? "hidden" : "Benny-bio text-sky-800"}>-</h2>

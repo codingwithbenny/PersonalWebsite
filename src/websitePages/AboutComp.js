@@ -29,14 +29,14 @@ const AboutComp = () => {
             <span className="">,</span>
           </h1>
           <p className="Tab-para ">
-            In 2017, I went off to college to study computer science because the
-            internet had told me that they have some of the highest paying jobs
-            right out of college, one semester later I changed my major.
+            In 2020, I was on my final year of college pursuing a degree in
+            Kinesiology when Covid hit. Prior to 2020, I developed a realization
+            that my major and future path didn't fit my desire to build and be
+            creative.
             <br />
             <br />
-            Fast forward to 2020, I was on my final year of college pursuing a
-            degree in Kinesiology when Covid hit. I decided to revist the
-            programming space with a new-found drive for challenging myself,
+            I decided to dive into the programming space at the start of
+            quarantine with my new-found drive for challenging myself,
             motivation to grow, and craving creative freedom. I went in with a
             new mindset and from there my spark for programming was ignited.
             <br />
