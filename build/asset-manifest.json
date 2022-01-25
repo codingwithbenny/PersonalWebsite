@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.4388a475.css",
+    "main.js": "./static/js/main.e5b501a9.js",
+    "static/js/787.1d583568.chunk.js": "./static/js/787.1d583568.chunk.js",
+    "static/media/BennyTamburrinoResume.pdf": "./static/media/BennyTamburrinoResume.a9a8563a91c44a2d0ac3.pdf",
+    "static/media/profile.png": "./static/media/profile.b2731a60e26d8a32aa0d.png",
+    "static/media/SaveTimeCollage.png": "./static/media/SaveTimeCollage.da2c908417a826d0c78c.png",
+    "static/media/DirectDental-Logo-.jpg": "./static/media/DirectDental-Logo-.c0689952b97d95a3b233.jpg",
+    "static/media/ArrowPoint_Tax_H.png": "./static/media/ArrowPoint_Tax_H.e70311453067fbe62044.png",
+    "static/media/websitePhoto.PNG": "./static/media/websitePhoto.582f54173300ec105232.PNG",
+    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "./index.html",
+    "static/media/SaveTime5.PNG": "./static/media/SaveTime5.c484a6cffbf04b03f472.PNG",
+    "main.4388a475.css.map": "./static/css/main.4388a475.css.map",
+    "main.e5b501a9.js.map": "./static/js/main.e5b501a9.js.map",
+    "787.1d583568.chunk.js.map": "./static/js/787.1d583568.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4388a475.css",
+    "static/js/main.e5b501a9.js"
+  ]
+}
