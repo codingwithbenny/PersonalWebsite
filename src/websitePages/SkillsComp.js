@@ -173,7 +173,7 @@ const SkillsComp = () => {
   }, [selectedSkill])
 
   return (
-    <div className="text-center pt-10">
+    <div className="text-center pt-10 pb-5 md:pb-5">
       <div className="Skills-box grid grid-cols-4 px-10 lg:grid-cols-8 gap-8 text-center">
         <div
           className={

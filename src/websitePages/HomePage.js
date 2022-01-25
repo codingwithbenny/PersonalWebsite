@@ -76,7 +76,7 @@ const HomePage = () => {
 
         <h2 className={starting ? "hidden" : "Benny-bio text-sky-800"}>-</h2>
 
-        <h1 className={starting ? "hidden" : "Benny-bio text-sky-800"}>
+        <h1 className={starting ? "hidden" : "Benny-bio text-sky-800 px-4"}>
           Full Stack Software Developer | Northern California
         </h1>
 
