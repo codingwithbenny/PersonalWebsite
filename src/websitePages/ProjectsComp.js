@@ -92,7 +92,7 @@ const ProjectsComp = () => {
           onClick={() => modalHandler(0)}
         />
 
-        <h1 className="pt-5 pb-5 md:pb-0">My ever-changing website</h1>
+        <h1 className="pt-5 pb-5 md:pb-0">My Website</h1>
 
         <div>
           <h1
@@ -104,8 +104,7 @@ const ProjectsComp = () => {
           >
             This website not only acts as a portfolio but doubles as a sandbox
             for all of the front-end development skills I absorb along the way.
-            I intend to always continue learning new techniques and skills hence
-            the ~Always Under Continuous Reconstruction~.
+            I intend to always continue learning new techniques and skills.
             <br />
             <br />
             ~ React ~ HTML5 ~ CSS3 ~ Tailwind ~
