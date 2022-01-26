@@ -40,7 +40,7 @@ const ExperienceComp = () => {
           </div>
         </div>
         <div className="md:w-1/4">
-          <h1
+          <button
             className={
               showTools.DD
                 ? "text-5xl leading-normal text-sky-800 -rotate-45 duration-300 hover:scale-125"
@@ -49,7 +49,7 @@ const ExperienceComp = () => {
             onClick={() => toolsHandler(0)}
           >
             +
-          </h1>
+          </button>
         </div>
       </div>
 
@@ -94,7 +94,7 @@ const ExperienceComp = () => {
           </div>
         </div>
         <div className="md:w-1/4">
-          <h1
+          <button
             className={
               showTools.AP
                 ? "text-5xl leading-normal text-sky-800 -rotate-45 duration-300 hover:scale-125 "
@@ -103,7 +103,7 @@ const ExperienceComp = () => {
             onClick={() => toolsHandler(1)}
           >
             +
-          </h1>
+          </button>
         </div>
       </div>
       <div

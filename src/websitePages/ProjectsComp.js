@@ -106,7 +106,7 @@ const ProjectsComp = () => {
             This website not only acts as a portfolio but doubles as a sandbox
             for all of the front-end development skills I absorb along the way.
             I intend to always continue learning new techniques and skills hence
-            the [Always Under Continuous Reconstruction].
+            the ~Always Under Continuous Reconstruction~.
             <br />
             <br />
             ~ React ~ HTML5 ~ CSS3 ~ Tailwind ~
