@@ -54,15 +54,17 @@ const HomePage = () => {
         </h1>
 
         <h2 className="Benny-bio text-sky-800">-</h2>
-
         <a
           className="Benny-bio text-sky-500"
           href="mailto:bennytamburrino@gmail.com"
         >
           bennytamburrino@gmail.com
-          <br />
-          (707)-328-6705
         </a>
+        <h1>
+          <a className="Benny-bio text-sky-500" href="tel:707-328-6705">
+            (707)-328-6705
+          </a>
+        </h1>
 
         <div className="Tabs xl:flex justify-center items-center 2xl:space-x-38 xl:space-x-28 lg:space-x-10 md:space-x-4 pt-10 text-sky-800 ">
           <button
