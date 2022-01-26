@@ -106,7 +106,7 @@ const ContactsComp = () => {
 
   return (
     <div>
-      <div className="Contact-statement w-96 pb-10">
+      <div className="Contact-statement w-96 pb-10 px-5">
         <p>
           I welcome an opportunity to learn and grow in an environment that
           fosters curiosity and growth. Please let me know if you think this

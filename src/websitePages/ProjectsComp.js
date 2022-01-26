@@ -37,9 +37,11 @@ const ProjectsComp = () => {
   }
 
   const modalHandler = (item) => {
+    console.log(item)
     if (item === 0) {
       setModal({
         ...modal,
+        website: true,
         saveTime: false,
         mobileApp: false,
         redditBot: false,
@@ -48,6 +50,7 @@ const ProjectsComp = () => {
       setModal({
         ...modal,
         website: false,
+        saveTime: true,
         mobileApp: false,
         redditBot: false,
       })
@@ -79,10 +82,6 @@ const ProjectsComp = () => {
       setHide(false)
     }
   }, [modal])
-
-  // React.useEffect(() => {
-  //   console.log(hide)
-  // }, [hide])
 
   return (
     <div className="md:flex Proj-text md:grid grid-cols-2 pt-5 gap-10 px-5">
@@ -164,7 +163,7 @@ const ProjectsComp = () => {
           onClick={() => modalHandler(1)}
         />
 
-        <h1 className="pb-5 md:pb-0">"Save-Time" chrome extension</h1>
+        <h1 className="pb-5 md:pb-0">"Save-Time" Chrome extension</h1>
       </div>
       <div
         className={
