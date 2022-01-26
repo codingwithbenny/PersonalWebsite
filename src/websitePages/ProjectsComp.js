@@ -131,8 +131,8 @@ const ProjectsComp = () => {
             }
           >
             A chrome extension that would would take in two websites, a
-            productivity site and distraction site. When visiting the time
-            wasting website an alert would pop-up. Clicking on the extension
+            productivity site and distraction site. When visiting the
+            distraction website an alert would pop-up. Clicking on the extension
             would give the user a prompt to override. If not overriden, Chrome
             would direct user to their productivity website and time would be
             added to "save counter".
