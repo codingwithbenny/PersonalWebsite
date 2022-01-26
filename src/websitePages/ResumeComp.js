@@ -19,26 +19,28 @@ const AboutComp = () => {
       <div className="flex items-center justify-center grid grid-cols-7 gap-4">
         <div className="col-start-3 col-span-3">
           <h1 className="Tab-header pb-10 items-center justify-center">
-            <span className="">W</span>
-            <span className="">e</span>
-            <span className="Welcome">l</span>
-            <span className="">c</span>
+            <span className="Welcome">A</span>
+            <span className="">b</span>
             <span className="Welcome">o</span>
-            <span className="">m</span>
-            <span className="Welcome">e</span>
-            <span className="">,</span>
+            <span className="">u</span>
+            <span className="Welcome">t</span>
+            <span className="">:</span>
           </h1>
           <p className="Tab-para ">
-            In 2020, I was on my final year of college pursuing a degree in
-            Kinesiology when Covid hit. Prior to 2020, I developed a realization
-            that my major and future path didn't fit my desire to build and be
-            creative.
+            I like statistics and datas so, it is no surprise that in my final
+            year at Sacramento State University, I stayed true to a strong trend
+            and shifted my career focus away from Kinesiology into towards
+            computer science. I decided to dive into the programming space at
+            the start of quarantine with my new-found drive for challenging
+            myself, motivation to grow, and craving creative freedom. I went in
+            with a determined mindset and from there my spark for programming
+            was ignited.
             <br />
             <br />
-            I decided to dive into the programming space at the start of
-            quarantine with my new-found drive for challenging myself,
-            motivation to grow, and craving creative freedom. I went in with a
-            new mindset and from there my spark for programming was ignited.
+            For the past two years I poured myself into learning for the
+            interest of it. I loved it. I have found my passion and within
+            months was able to secure a few junior positions as a full stack
+            developer where I continued to learn and hone my skills.
             <br />
             <br />
             <span className="font-bold text-xl">
@@ -58,7 +60,7 @@ const AboutComp = () => {
           onClick={() => imageClick()}
         />
       </div>
-      <div className="pt-14">
+      <div className="pt-14 pb-10">
         <a
           className="About-icon devicon-github-original colored"
           href="https://github.com/codingwithbenny"

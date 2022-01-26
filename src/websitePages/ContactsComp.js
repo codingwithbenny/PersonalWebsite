@@ -106,6 +106,14 @@ const ContactsComp = () => {
 
   return (
     <div>
+      <div className="Contact-statement w-96 pb-10">
+        <p>
+          I welcome an opportunity to learn and grow in an environment that
+          fosters curiosity and growth. Please let me know if you think this
+          fits with your culture and needs.{" "}
+        </p>
+      </div>
+
       <form className="" ref={form} onSubmit={(e) => submitHandler(e)}>
         <div className="items-center py-2">
           <div
@@ -118,7 +126,7 @@ const ContactsComp = () => {
             <input
               className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
               type="text"
-              placeholder="Who are you?"
+              placeholder="Name"
               aria-label="name"
               value={inputFields.name}
               name="name"
@@ -152,7 +160,7 @@ const ContactsComp = () => {
             <textarea
               className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
               type="text"
-              placeholder="Let's Talk"
+              placeholder="Anything you want me to know before reaching out?"
               aria-label="reason"
               value={inputFields.reason}
               name="reason"

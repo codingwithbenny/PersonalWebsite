@@ -13,7 +13,7 @@
 .Tab-header {
   font-family: Raleway;
   font-weight: 200;
-  font-size: 7vh;
+  font-size: 6vh;
 }
 
 @media screen and (max-width: 661px) {
@@ -190,4 +190,8 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.Contact-statement {
+  font-family: Raleway;
 }

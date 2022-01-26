@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./HomePage.css"
-import AboutComp from "./AboutComp"
+import ResumeComp from "./ResumeComp"
 import ExperienceComp from "./ExperienceComp"
 import ProjectsComp from "./ProjectsComp"
 import SkillsComp from "./SkillsComp"
@@ -9,7 +9,7 @@ import ContactsComp from "./ContactsComp"
 const initialSelectedTab = {
   experience: false,
   skills: false,
-  about: true,
+  resume: true,
   projects: false,
   contacts: false,
 }
@@ -25,7 +25,7 @@ const HomePage = () => {
     } else if (e === 1) {
       setSelectedTab({ ...selectedTab, skills: true })
     } else if (e === 2) {
-      setSelectedTab({ ...selectedTab, about: true })
+      setSelectedTab({ ...selectedTab, resume: true })
     } else if (e === 3) {
       setSelectedTab({ ...selectedTab, projects: true })
     } else if (e === 4) {
@@ -54,6 +54,15 @@ const HomePage = () => {
         </h1>
 
         <h2 className="Benny-bio text-sky-800">-</h2>
+
+        <a
+          className="Benny-bio text-sky-500"
+          href="mailto:bennytamburrino@gmail.com"
+        >
+          bennytamburrino@gmail.com
+          <br />
+          (707)-328-6705
+        </a>
 
         <div className="Tabs xl:flex justify-center items-center 2xl:space-x-38 xl:space-x-28 lg:space-x-10 md:space-x-4 pt-10 text-sky-800 ">
           <button
@@ -84,14 +93,14 @@ const HomePage = () => {
 
           <button
             className={
-              selectedTab.about
+              selectedTab.resume
                 ? "Tab-category text-5xl opacity-100"
                 : "Tab-category opacity-50"
             }
             onClick={(e) => selectTabHandler(2)}
           >
-            `About`
-            <span className={selectedTab.about ? "cursor" : "hidden"}>|</span>
+            `Resume`
+            <span className={selectedTab.resume ? "cursor" : "hidden"}>|</span>
           </button>
 
           <button
@@ -133,10 +142,10 @@ const HomePage = () => {
           </div>
           <div
             className={
-              selectedTab.about ? "Tab-content" : "Tab-content hidden "
+              selectedTab.resume ? "Tab-content" : "Tab-content hidden "
             }
           >
-            <AboutComp />
+            <ResumeComp />
           </div>
           <div
             className={
