@@ -15,11 +15,7 @@ const initialSelectedTab = {
 }
 
 const HomePage = () => {
-  const [starting, setStarting] = useState(true)
   const [selectedTab, setSelectedTab] = useState(initialSelectedTab)
-
-  const exitStartingHandler = () =>
-    starting ? setStarting(false) : setStarting(true)
 
   const selectTabHandler = (e) => {
     Object.keys(selectedTab).forEach((v) => (selectedTab[v] = false))
@@ -45,50 +41,21 @@ const HomePage = () => {
   // }, [selectedTab])
 
   return (
-    <div
-      className={
-        starting
-          ? "bg-orange-200 flex h-screen transition-all duration-1000"
-          : "bg-white flex h-screen transition-all duration-1000 grid grid-cols-1"
-      }
-    >
-      <div
-        className={starting ? "text-center m-auto" : "Benny-div text-center"}
-      >
-        <button
-          className={starting ? "Benny-start text-white " : "hidden"}
-          onClick={exitStartingHandler}
-        >
+    <div className="bg-white flex h-screen transition-all duration-1000 grid grid-cols-1">
+      <div className="Benny-div text-center">
+        <h1 className="Benny-end text-sky-800 ">
           {"`"}Benny{"`"}{" "}
-          <span className={starting ? "cursor" : "hidden"}>|</span>
-        </button>
-
-        <button
-          className={starting ? "hidden" : "Benny-end text-sky-800 "}
-          onClick={exitStartingHandler}
-        >
-          {"`"}Benny{"`"}{" "}
-        </button>
-
-        <h1 className={starting ? "Benny-bio text-white mt-5" : "hidden"}>
-          ~ Always Under Continuous Renovation ~
         </h1>
 
-        <h2 className={starting ? "hidden" : "Benny-bio text-sky-800"}>-</h2>
+        <h2 className="Benny-bio text-sky-800">-</h2>
 
-        <h1 className={starting ? "hidden" : "Benny-bio text-sky-800 px-4"}>
+        <h1 className="Benny-bio text-sky-800 px-4">
           Full Stack Software Developer | Northern California
         </h1>
 
-        <h2 className={starting ? "hidden" : "Benny-bio text-sky-800"}>-</h2>
+        <h2 className="Benny-bio text-sky-800">-</h2>
 
-        <div
-          className={
-            starting
-              ? "hidden"
-              : "Tabs xl:flex justify-center items-center 2xl:space-x-38 xl:space-x-28 lg:space-x-10 md:space-x-4 pt-10 text-sky-800 "
-          }
-        >
+        <div className="Tabs xl:flex justify-center items-center 2xl:space-x-38 xl:space-x-28 lg:space-x-10 md:space-x-4 pt-10 text-sky-800 ">
           <button
             className={
               selectedTab.experience
@@ -156,11 +123,7 @@ const HomePage = () => {
           </button>
         </div>
 
-        <div
-          className={
-            starting ? "hidden" : "Media-box flex justify-center items-center"
-          }
-        >
+        <div className="Media-box flex justify-center items-center">
           <div
             className={
               selectedTab.experience ? "Tab-content" : "Tab-content hidden "
