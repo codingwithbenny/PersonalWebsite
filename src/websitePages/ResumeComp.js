@@ -29,12 +29,12 @@ const AboutComp = () => {
           <p className="Tab-para ">
             I like statistics and datas so, it is no surprise that in my final
             year at Sacramento State University, I stayed true to a strong trend
-            and shifted my career focus away from Kinesiology into towards
-            computer science. I decided to dive into the programming space at
-            the start of quarantine with my new-found drive for challenging
-            myself, motivation to grow, and craving creative freedom. I went in
-            with a determined mindset and from there my spark for programming
-            was ignited.
+            and shifted my career focus away from Kinesiology towards computer
+            science. I decided to dive into the programming space at the start
+            of quarantine with my new-found drive for challenging myself,
+            motivation to grow, and craving creative freedom. I went in with a
+            determined mindset and from there my spark for programming was
+            ignited.
             <br />
             <br />
             For the past two years I poured myself into learning for the

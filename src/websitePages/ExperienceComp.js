@@ -185,7 +185,7 @@ const ExperienceComp = () => {
         <div className="Exp-titles flex items-start justify-between w-full pb-10">
           <div className="pl-3 w-full pt-3">
             <p className="text-xl font-medium leading-5 text-gray-800">
-              Software Developer
+              Junior Software Developer
             </p>
             <p className="text-sm leading-normal pt-2 text-gray-500">
               [2021-Present]{" "}
