@@ -107,7 +107,7 @@ const ProjectsComp = () => {
             I intend to always continue learning new techniques and skills.
             <br />
             <br />
-            ~ React ~ HTML5 ~ CSS3 ~ Tailwind ~
+            ~ React ~ HTML5 ~ CSS3 ~ tailwind ~
             <br />
             <br />
             <p
@@ -137,7 +137,7 @@ const ProjectsComp = () => {
             counter".
             <br />
             <br />
-            ~ Javascript ~ HTML5 ~ CSS3 ~ Google API ~
+            ~ JavaScript ~ HTML5 ~ CSS3 ~ Google API ~
             <br />
             <br />
             <p
