@@ -173,7 +173,7 @@ const SkillsComp = () => {
   }, [selectedSkill])
 
   return (
-    <div className="text-center pt-10 pb-5 md:pb-5">
+    <div className="text-center pt-10 pb-5 md:pb-5 px-5">
       <div className="Skills-box grid grid-cols-4 px-10 lg:grid-cols-8 gap-8 text-center">
         <div
           className={
@@ -303,80 +303,120 @@ const SkillsComp = () => {
         </h1>
       </div>
       <div className={selectedSkill === "javascript" ? "" : "hidden"}>
-        <h1 className="Skills-info pt-5">It's a love-hate relationship</h1>
+        <h1 className="Skills-info pt-5">~JavaScript~</h1>
+        <h1 className="Skills-info pt-5">
+          I tend to use the JS stack and related technologies whenever <br />
+          tackling front-end or back-end development tasks.
+        </h1>
       </div>
       <div className={selectedSkill === "nodejs" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">~Node.js~</h1>
         <h1 className="Skills-info pt-5">
-          We brought our relationship to the backend{" "}
+          My preferred method of back-end and script development.
         </h1>
       </div>
       <div className={selectedSkill === "typescript" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">~TypeScript~</h1>
         <h1 className="Skills-info pt-5">
-          You made me love my relationship with those two
+          Used with the JS stack for efficiency and productivity.{" "}
         </h1>
       </div>
       <div className={selectedSkill === "react" ? "" : "hidden"}>
-        <h1 className="Skills-info pt-5">You're my rock</h1>
+        <h1 className="Skills-info pt-5">~React~</h1>
+        <h1 className="Skills-info pt-5">
+          My personal favorite framework for front-end development in the
+          workplace
+          <br className="hidden md:block" /> and for personal projects. I use
+          this tool to create reactive components to give{" "}
+          <br className="hidden md:block" />
+          instant feedback to users along with project organization.
+        </h1>
       </div>
       <div className={selectedSkill === "python" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">~Python~</h1>
         <h1 className="Skills-info pt-5">
-          Error: "Unexpected Indent" <br />
-          We still love you{" "}
+          Used for quick problem solving and data sciences.
         </h1>
       </div>
       <div className={selectedSkill === "rails" ? "" : "hidden"}>
-        <h1 className="Skills-info pt-5">123-MVC</h1>
+        <h1 className="Skills-info pt-5">~Ruby on Rails~</h1>
+        <h1 className="Skills-info pt-5">
+          Most of my professional back-end experience has used RoR to <br />
+          create scalable applications in short periods of time.
+        </h1>
       </div>
       <div className={selectedSkill === "express" ? "" : "hidden"}>
-        <h1 className="Skills-info pt-5">"The Gatekeeper"</h1>
+        <h1 className="Skills-info pt-5">~Express~</h1>
+        <h1 className="Skills-info pt-5">
+          Paired with Node.js for the back-end of applications to get them up
+          and running quickly.
+        </h1>
       </div>
       <div className={selectedSkill === "mongodb" ? "" : "hidden"}>
-        <h1 className="Skills-info pt-5">"Leaf" your storage to me</h1>
+        <h1 className="Skills-info pt-5">~MongoDB~</h1>
+        <h1 className="Skills-info pt-5">
+          Occasionally used along side the JS stack for its simplicity and
+          flexibility.
+        </h1>
       </div>
       <div className={selectedSkill === "html" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">~HTML5~</h1>
         <h1 className="Skills-info pt-5">
-          I never meant to learn you, it just happened
+          I use both HTML5 and CSS3 so often they're pretty much engraved in my
+          brain.
         </h1>
       </div>
       <div className={selectedSkill === "css" ? "" : "hidden"}>
-        <h1 className="Skills-info pt-5">W</h1>
-        <h1 className="Skills-info">h</h1>
-        <h1 className="Skills-info">a</h1>
-        <h1 className="Skills-info">t</h1>
-        <br />
-        <h1 className="Skills-info">h</h1>
-        <h1 className="Skills-info">e</h1>
-        <br />
-        <h1 className="Skills-info">s</h1>
-        <h1 className="Skills-info">a</h1>
-        <h1 className="Skills-info">i</h1>
-        <h1 className="Skills-info">d</h1>
+        <h1 className="Skills-info pt-5">~CSS3~</h1>
+        <h1 className="Skills-info pt-5">
+          I use both HTML5 and CSS3 so often they're pretty much engraved in my
+          brain.
+        </h1>
       </div>
       <div className={selectedSkill === "tailwind" ? "" : "hidden"}>
-        <h1 className="Skills-info pt-5">Lego for Programmers</h1>
+        <h1 className="Skills-info pt-5">~tailwind~</h1>
+        <h1 className="Skills-info pt-5">
+          I prefer to design with tailwind when a project needs more flexibility
+          in the format <br className="hidden md:block" />
+          and has unique requirements.
+        </h1>
       </div>
       <div className={selectedSkill === "bootstrap" ? "" : "hidden"}>
-        <h1 className="Skills-info pt-5">Lincoln Logs for Programmers</h1>
+        <h1 className="Skills-info pt-5">~Bootstrap~</h1>
+        <h1 className="Skills-info pt-5">
+          I prefer to design with Bootstrap when a project needs to be produced
+          quicker and <br className="hidden md:block" /> do not require unique
+          formatting.
+        </h1>
       </div>
       <div className={selectedSkill === "docker" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">~Docker~</h1>
         <h1 className="Skills-info pt-5">
-          I've got the whole world in the palm of my hand
+          Used in most of my professional work to make collaboration between
+          developers
+          <br className="hidden md:block" /> simple thus saving time and
+          preventing unnecessary headaches.
         </h1>
       </div>
       <div className={selectedSkill === "wordpress" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">~Wordpress~</h1>
         <h1 className="Skills-info pt-5">
-          I find your lack of creativity disturbing
+          Has helped me get numerous projects up and running quickly and with
+          ease.
         </h1>
       </div>
       <div className={selectedSkill === "adobe" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">~Adobe Suite~</h1>
         <h1 className="Skills-info pt-5">
-          I pay for all of your apps, but only use 5 of them
+          Amazing tools for creativity. Specialize in Premiere Pro and
+          Photoshop.
         </h1>
       </div>
       <div className={selectedSkill === "office" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">~Microsoft Office~</h1>
         <h1 className="Skills-info pt-5">
-          If you were to break
-          <br /> the entire world would be in shambles
+          Used throughout my entire educational and professional careers for
+          data <br className="hidden md:block" /> display and organization.
         </h1>
       </div>
     </div>

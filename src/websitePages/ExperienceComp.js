@@ -29,7 +29,7 @@ const ExperienceComp = () => {
   }
 
   return (
-    <div className="px-10">
+    <div className=" px-10">
       <div className="md:flex items-center border-b border-sky-800 pb-12 pt-10 ">
         <div className="w-full">
           <a
