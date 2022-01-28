@@ -9,7 +9,7 @@ const ProjectsComp = () => {
     website: true,
     saveTime: true,
     mobileApp: true,
-    redditBot: true,
+    ertcio: true,
   })
 
   const [hide, setHide] = useState(true)
@@ -44,7 +44,7 @@ const ProjectsComp = () => {
         website: true,
         saveTime: false,
         mobileApp: false,
-        redditBot: false,
+        ertcio: false,
       })
     } else if (item === 1) {
       setModal({
@@ -52,7 +52,7 @@ const ProjectsComp = () => {
         website: false,
         saveTime: true,
         mobileApp: false,
-        redditBot: false,
+        ertcio: false,
       })
     }
   }
@@ -62,7 +62,7 @@ const ProjectsComp = () => {
       website: true,
       saveTime: true,
       mobileApp: true,
-      redditBot: true,
+      ertcio: true,
     })
   }
 
@@ -175,12 +175,12 @@ const ProjectsComp = () => {
       </div>
       <div
         className={
-          modal.redditBot
+          modal.ertcio
             ? "Proj-fade-in container items-center border-l border-t p-12 border-sky-800"
             : "Proj-fade-right container items-center border-l border-t p-12 border-sky-800 "
         }
       >
-        <h1>Reddit Bot Coming Soon...</h1>
+        <h1>ERTC.io Coming Soon...</h1>
       </div>
     </div>
   )
