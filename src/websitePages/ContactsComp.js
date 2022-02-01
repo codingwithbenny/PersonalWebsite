@@ -194,8 +194,13 @@ const ContactsComp = () => {
           />
         </div>
       </div>
+
+      {/* Hey No Cheating */}
       <div className={hiddenCode === "42" ? "" : "hidden"}>
-        <h1 className="text-sm">Video in Works</h1>
+        <h1 className="text-sm pb-10">
+          Wow, you either know binary or are a huge fan of THGTTG. <br /> Thanks
+          for playing along!
+        </h1>
       </div>
     </div>
   )
