@@ -114,7 +114,11 @@ const ContactsComp = () => {
         </p>
       </div>
 
-      <form className="" ref={form} onSubmit={(e) => submitHandler(e)}>
+      <form
+        className="w-80 items-center justify-center mx-auto"
+        ref={form}
+        onSubmit={(e) => submitHandler(e)}
+      >
         <div className="items-center py-2">
           <div
             className={
@@ -182,7 +186,7 @@ const ContactsComp = () => {
         </div>
       </form>
 
-      <div>
+      <div class="w-80 items-center justify-center mx-auto">
         <div className="border-b border-sky-800 mb-10 pb-2 mt-10">
           <input
             className="Code-input appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none text-sm"
