@@ -40,10 +40,10 @@ const ExperienceComp = () => {
             <img
               src={ArrowPointLogo}
               alt="ArrowPointLogo"
-              className="sm:w-1/3 md:w-96 "
+              className="sm:w-1/3 sm:w-96 "
             />
           </a>
-          <p className="Exp-info pt-5 text-left w-96">
+          <p className="Exp-info pt-5 text-left w-80 md:w-96">
             Responsible for the front-end development of a Covid stimulus
             software.
             <br />
@@ -104,10 +104,10 @@ const ExperienceComp = () => {
             <img
               src={DirectDentalLogo}
               alt="DirectDentalLogo"
-              className="sm:w-1/3 md:w-96 "
+              className="sm:w-1/3 sm:w-96 "
             />
           </a>
-          <p className="Exp-info pt-5 text-left w-96">
+          <p className="Exp-info pt-5 text-left w-80 md:w-96">
             Contracted for a total site overhaul and mobile app development.
             <br />
             More info{" "}
@@ -168,10 +168,10 @@ const ExperienceComp = () => {
             <img
               src={WealthManagment}
               alt="WealthManagment"
-              className="sm:w-1/3 md:w-96 "
+              className="sm:w-1/3 sm:w-96 "
             />
           </a>
-          <p className="Exp-info pt-5 text-left w-96">
+          <p className="Exp-info pt-5 text-left w-80 md:w-96">
             Tasked with data organization and data transformation to increase
             workplace efficiency.
             <br />

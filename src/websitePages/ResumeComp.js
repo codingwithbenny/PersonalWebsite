@@ -17,7 +17,7 @@ const AboutComp = () => {
   return (
     <div>
       <div className="flex items-center justify-center grid grid-cols-7 gap-4">
-        <div className="col-start-3 col-span-3">
+        <div className=" col-start-2 col-span-5 md:col-start-2 md:col-span-5 lg:col-start-3 lg:col-span-3">
           <h1 className="Tab-header pb-10 items-center justify-center">
             <span className="Welcome">A</span>
             <span className="">b</span>
@@ -26,8 +26,8 @@ const AboutComp = () => {
             <span className="Welcome">t</span>
             <span className="">:</span>
           </h1>
-          <p className="Tab-para ">
-            I like statistics and datas so, it is no surprise that in my final
+          <p className="Tab-para w-full">
+            I like statistics and data so, it is no surprise that in my final
             year at Sacramento State University, I stayed true to a strong trend
             and shifted my career focus away from Kinesiology towards computer
             science. I decided to dive into the programming space at the start
