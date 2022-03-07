@@ -11,6 +11,8 @@ const SkillsComp = () => {
     react: false,
     express: false,
     mongodb: false,
+    postgresql: false,
+    electron: false,
     typescript: false,
     html: false,
     css: false,
@@ -94,6 +96,21 @@ const SkillsComp = () => {
         express: true,
         mongodb: true,
         typescript: true,
+      })
+    } else if (selectedSkill === "postgresql") {
+      setRelated({
+        ...related,
+        postgresql: true,
+      })
+    } else if (selectedSkill === "electron") {
+      setRelated({
+        ...related,
+        electron: true,
+        javascript: true,
+        react: true,
+        nodejs: true,
+        typescript: true,
+        tailwind: true,
       })
     } else if (selectedSkill === "typescript") {
       setRelated({
@@ -265,6 +282,22 @@ const SkillsComp = () => {
         </div>
         <div
           className={
+            related.postgresql ? "Skills-icon" : "Skills-icon opacity-30"
+          }
+          onClick={(e) => setSelectedSkill("postgresql")}
+        >
+          <i className="devicon-postgresql-plain colored"></i>
+        </div>
+        <div
+          className={
+            related.electron ? "Skills-icon" : "Skills-icon opacity-30"
+          }
+          onClick={(e) => setSelectedSkill("electron")}
+        >
+          <i className="devicon-electron-original colored"></i>
+        </div>
+        <div
+          className={
             related.wordpress ? "Skills-icon" : "Skills-icon opacity-30"
           }
           onClick={(e) => setSelectedSkill("wordpress")}
@@ -387,6 +420,20 @@ const SkillsComp = () => {
           I prefer to design with Bootstrap when a project needs to be produced
           quicker and <br className="hidden md:block" /> do not require unique
           formatting.
+        </h1>
+      </div>
+      <div className={selectedSkill === "postgresql" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">~PostgreSQL~</h1>
+        <h1 className="Skills-info pt-5">
+          Used when needing to store large amounts of data safely and
+          efficiently.
+        </h1>
+      </div>
+      <div className={selectedSkill === "electron" ? "" : "hidden"}>
+        <h1 className="Skills-info pt-5">~Electron~</h1>
+        <h1 className="Skills-info pt-5">
+          My go to technology when I need to quickly create a clean desktop{" "}
+          <br className="hidden md:block" /> app/tool that others can utilize.
         </h1>
       </div>
       <div className={selectedSkill === "docker" ? "" : "hidden"}>

@@ -117,11 +117,21 @@
   font-family: Raleway;
 }
 
-.Modal-text {
+/* .Modal-text {
   animation: fadein 1s;
+} */
+
+.hold-size {
+  width: auto;
 }
 
-.Proj-fade-right {
+@media only screen and (min-width: 800px) {
+  .hold-size {
+    width: 525px;
+  }
+}
+
+/* .Proj-fade-right {
   transform: translateX(80%);
   transition: all 1s linear;
   animation: fadeout 1s;
@@ -133,8 +143,8 @@
   transition: all 1s linear;
   animation: fadeout 1s;
   animation-fill-mode: forwards;
-}
-
+} */
+/* 
 .Proj-fade-in {
   transition: all 1s linear;
   animation: fadein 1s;
@@ -163,7 +173,7 @@
   100% {
     opacity: 0;
   }
-}
+} */
 
 /* Skills page */
 
