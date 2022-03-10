@@ -215,9 +215,10 @@ const ExperienceComp = () => {
         <i className="Exp-icons devicon-nodejs-plain colored" />
         <i className="Exp-icons devicon-javascript-plain colored" />
         <i className="Exp-icons devicon-python-plain colored " />
-        <i className="Exp-icons devicon-typescript-plain colored" />
-        <i className="Exp-icons devicon-html5-plain colored" />
-        <i className="Exp-icons devicon-css3-plain colored" />
+        <i className="Exp-icons devicon-react-plain colored " />
+        <i className="Exp-icons devicon-electron-original colored" />
+        <i className="Exp-icons devicon-tailwindcss-original-wordmark colored " />
+        
       </div>
     </div>
   )

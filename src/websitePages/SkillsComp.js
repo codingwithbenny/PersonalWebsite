@@ -294,7 +294,7 @@ const SkillsComp = () => {
           }
           onClick={(e) => setSelectedSkill("electron")}
         >
-          <i className="devicon-electron-original colored"></i>
+          <i className="devicon-electron-original colored"/>
         </div>
         <div
           className={
